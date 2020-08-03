@@ -15,6 +15,8 @@ group :development do
   gem 'foreman'
   gem 'sqlite3'
   gem 'listen'
+  gem "steep"
+  gem "rbs_rails"
 end
 
 group :production do
