@@ -1,0 +1,119 @@
+class Server < ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Server, Server::ActiveRecord_Relation]
+
+  attr_accessor id (): Integer
+  def id_changed?: () -> bool
+  def id_change: () -> [Integer?, Integer?]
+  def id_will_change!: () -> void
+  def id_was: () -> Integer?
+  def id_previously_changed?: () -> bool
+  def id_previous_change: () -> Array[Integer?]?
+  def id_previously_was: () -> Integer?
+  def restore_id!: () -> void
+  def clear_id_change: () -> void
+
+  attr_accessor name (): String?
+  def name_changed?: () -> bool
+  def name_change: () -> [String?, String?]
+  def name_will_change!: () -> void
+  def name_was: () -> String?
+  def name_previously_changed?: () -> bool
+  def name_previous_change: () -> Array[String?]?
+  def name_previously_was: () -> String?
+  def restore_name!: () -> void
+  def clear_name_change: () -> void
+
+  attr_accessor uri (): String?
+  def uri_changed?: () -> bool
+  def uri_change: () -> [String?, String?]
+  def uri_will_change!: () -> void
+  def uri_was: () -> String?
+  def uri_previously_changed?: () -> bool
+  def uri_previous_change: () -> Array[String?]?
+  def uri_previously_was: () -> String?
+  def restore_uri!: () -> void
+  def clear_uri_change: () -> void
+
+  attr_accessor created_at (): Time?
+  def created_at_changed?: () -> bool
+  def created_at_change: () -> [Time?, Time?]
+  def created_at_will_change!: () -> void
+  def created_at_was: () -> Time?
+  def created_at_previously_changed?: () -> bool
+  def created_at_previous_change: () -> Array[Time?]?
+  def created_at_previously_was: () -> Time?
+  def restore_created_at!: () -> void
+  def clear_created_at_change: () -> void
+
+  attr_accessor updated_at (): Time?
+  def updated_at_changed?: () -> bool
+  def updated_at_change: () -> [Time?, Time?]
+  def updated_at_will_change!: () -> void
+  def updated_at_was: () -> Time?
+  def updated_at_previously_changed?: () -> bool
+  def updated_at_previous_change: () -> Array[Time?]?
+  def updated_at_previously_was: () -> Time?
+  def restore_updated_at!: () -> void
+  def clear_updated_at_change: () -> void
+
+  attr_accessor arch (): String?
+  def arch_changed?: () -> bool
+  def arch_change: () -> [String?, String?]
+  def arch_will_change!: () -> void
+  def arch_was: () -> String?
+  def arch_previously_changed?: () -> bool
+  def arch_previous_change: () -> Array[String?]?
+  def arch_previously_was: () -> String?
+  def restore_arch!: () -> void
+  def clear_arch_change: () -> void
+
+  attr_accessor os (): String?
+  def os_changed?: () -> bool
+  def os_change: () -> [String?, String?]
+  def os_will_change!: () -> void
+  def os_was: () -> String?
+  def os_previously_changed?: () -> bool
+  def os_previous_change: () -> Array[String?]?
+  def os_previously_was: () -> String?
+  def restore_os!: () -> void
+  def clear_os_change: () -> void
+
+  attr_accessor version (): String?
+  def version_changed?: () -> bool
+  def version_change: () -> [String?, String?]
+  def version_will_change!: () -> void
+  def version_was: () -> String?
+  def version_previously_changed?: () -> bool
+  def version_previous_change: () -> Array[String?]?
+  def version_previously_was: () -> String?
+  def restore_version!: () -> void
+  def clear_version_change: () -> void
+
+  attr_accessor ordinal (): Float?
+  def ordinal_changed?: () -> bool
+  def ordinal_change: () -> [Float?, Float?]
+  def ordinal_will_change!: () -> void
+  def ordinal_was: () -> Float?
+  def ordinal_previously_changed?: () -> bool
+  def ordinal_previous_change: () -> Array[Float?]?
+  def ordinal_previously_was: () -> Float?
+  def restore_ordinal!: () -> void
+  def clear_ordinal_change: () -> void
+
+
+
+
+
+
+
+end
+
+class Server::ActiveRecord_Relation < ActiveRecord::Relation
+  include _ActiveRecord_Relation[Server]
+  include Enumerable[Server, self]
+
+
+end
+
+class Server::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end

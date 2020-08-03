@@ -1,0 +1,86 @@
+class Logfile < ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Logfile, Logfile::ActiveRecord_Relation]
+
+  attr_accessor id (): Integer
+  def id_changed?: () -> bool
+  def id_change: () -> [Integer?, Integer?]
+  def id_will_change!: () -> void
+  def id_was: () -> Integer?
+  def id_previously_changed?: () -> bool
+  def id_previous_change: () -> Array[Integer?]?
+  def id_previously_was: () -> Integer?
+  def restore_id!: () -> void
+  def clear_id_change: () -> void
+
+  attr_accessor report_id (): Integer?
+  def report_id_changed?: () -> bool
+  def report_id_change: () -> [Integer?, Integer?]
+  def report_id_will_change!: () -> void
+  def report_id_was: () -> Integer?
+  def report_id_previously_changed?: () -> bool
+  def report_id_previous_change: () -> Array[Integer?]?
+  def report_id_previously_was: () -> Integer?
+  def restore_report_id!: () -> void
+  def clear_report_id_change: () -> void
+
+  attr_accessor ext (): String?
+  def ext_changed?: () -> bool
+  def ext_change: () -> [String?, String?]
+  def ext_will_change!: () -> void
+  def ext_was: () -> String?
+  def ext_previously_changed?: () -> bool
+  def ext_previous_change: () -> Array[String?]?
+  def ext_previously_was: () -> String?
+  def restore_ext!: () -> void
+  def clear_ext_change: () -> void
+
+  attr_accessor data (): String?
+  def data_changed?: () -> bool
+  def data_change: () -> [String?, String?]
+  def data_will_change!: () -> void
+  def data_was: () -> String?
+  def data_previously_changed?: () -> bool
+  def data_previous_change: () -> Array[String?]?
+  def data_previously_was: () -> String?
+  def restore_data!: () -> void
+  def clear_data_change: () -> void
+
+  attr_accessor created_at (): Time?
+  def created_at_changed?: () -> bool
+  def created_at_change: () -> [Time?, Time?]
+  def created_at_will_change!: () -> void
+  def created_at_was: () -> Time?
+  def created_at_previously_changed?: () -> bool
+  def created_at_previous_change: () -> Array[Time?]?
+  def created_at_previously_was: () -> Time?
+  def restore_created_at!: () -> void
+  def clear_created_at_change: () -> void
+
+  attr_accessor updated_at (): Time?
+  def updated_at_changed?: () -> bool
+  def updated_at_change: () -> [Time?, Time?]
+  def updated_at_will_change!: () -> void
+  def updated_at_was: () -> Time?
+  def updated_at_previously_changed?: () -> bool
+  def updated_at_previous_change: () -> Array[Time?]?
+  def updated_at_previously_was: () -> Time?
+  def restore_updated_at!: () -> void
+  def clear_updated_at_change: () -> void
+
+
+
+  def report: () -> Report
+
+
+
+end
+
+class Logfile::ActiveRecord_Relation < ActiveRecord::Relation
+  include _ActiveRecord_Relation[Logfile]
+  include Enumerable[Logfile, self]
+
+
+end
+
+class Logfile::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end

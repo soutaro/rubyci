@@ -1,0 +1,130 @@
+class Report < ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Report, Report::ActiveRecord_Relation]
+
+  attr_accessor id (): Integer
+  def id_changed?: () -> bool
+  def id_change: () -> [Integer?, Integer?]
+  def id_will_change!: () -> void
+  def id_was: () -> Integer?
+  def id_previously_changed?: () -> bool
+  def id_previous_change: () -> Array[Integer?]?
+  def id_previously_was: () -> Integer?
+  def restore_id!: () -> void
+  def clear_id_change: () -> void
+
+  attr_accessor server_id (): Integer?
+  def server_id_changed?: () -> bool
+  def server_id_change: () -> [Integer?, Integer?]
+  def server_id_will_change!: () -> void
+  def server_id_was: () -> Integer?
+  def server_id_previously_changed?: () -> bool
+  def server_id_previous_change: () -> Array[Integer?]?
+  def server_id_previously_was: () -> Integer?
+  def restore_server_id!: () -> void
+  def clear_server_id_change: () -> void
+
+  attr_accessor datetime (): Time?
+  def datetime_changed?: () -> bool
+  def datetime_change: () -> [Time?, Time?]
+  def datetime_will_change!: () -> void
+  def datetime_was: () -> Time?
+  def datetime_previously_changed?: () -> bool
+  def datetime_previous_change: () -> Array[Time?]?
+  def datetime_previously_was: () -> Time?
+  def restore_datetime!: () -> void
+  def clear_datetime_change: () -> void
+
+  attr_accessor branch (): String?
+  def branch_changed?: () -> bool
+  def branch_change: () -> [String?, String?]
+  def branch_will_change!: () -> void
+  def branch_was: () -> String?
+  def branch_previously_changed?: () -> bool
+  def branch_previous_change: () -> Array[String?]?
+  def branch_previously_was: () -> String?
+  def restore_branch!: () -> void
+  def clear_branch_change: () -> void
+
+  attr_accessor revision (): Integer?
+  def revision_changed?: () -> bool
+  def revision_change: () -> [Integer?, Integer?]
+  def revision_will_change!: () -> void
+  def revision_was: () -> Integer?
+  def revision_previously_changed?: () -> bool
+  def revision_previous_change: () -> Array[Integer?]?
+  def revision_previously_was: () -> Integer?
+  def restore_revision!: () -> void
+  def clear_revision_change: () -> void
+
+  attr_accessor summary (): String?
+  def summary_changed?: () -> bool
+  def summary_change: () -> [String?, String?]
+  def summary_will_change!: () -> void
+  def summary_was: () -> String?
+  def summary_previously_changed?: () -> bool
+  def summary_previous_change: () -> Array[String?]?
+  def summary_previously_was: () -> String?
+  def restore_summary!: () -> void
+  def clear_summary_change: () -> void
+
+  attr_accessor created_at (): Time?
+  def created_at_changed?: () -> bool
+  def created_at_change: () -> [Time?, Time?]
+  def created_at_will_change!: () -> void
+  def created_at_was: () -> Time?
+  def created_at_previously_changed?: () -> bool
+  def created_at_previous_change: () -> Array[Time?]?
+  def created_at_previously_was: () -> Time?
+  def restore_created_at!: () -> void
+  def clear_created_at_change: () -> void
+
+  attr_accessor updated_at (): Time?
+  def updated_at_changed?: () -> bool
+  def updated_at_change: () -> [Time?, Time?]
+  def updated_at_will_change!: () -> void
+  def updated_at_was: () -> Time?
+  def updated_at_previously_changed?: () -> bool
+  def updated_at_previous_change: () -> Array[Time?]?
+  def updated_at_previously_was: () -> Time?
+  def restore_updated_at!: () -> void
+  def clear_updated_at_change: () -> void
+
+  attr_accessor option (): String?
+  def option_changed?: () -> bool
+  def option_change: () -> [String?, String?]
+  def option_will_change!: () -> void
+  def option_was: () -> String?
+  def option_previously_changed?: () -> bool
+  def option_previous_change: () -> Array[String?]?
+  def option_previously_was: () -> String?
+  def restore_option!: () -> void
+  def clear_option_change: () -> void
+
+  attr_accessor ltsv (): String?
+  def ltsv_changed?: () -> bool
+  def ltsv_change: () -> [String?, String?]
+  def ltsv_will_change!: () -> void
+  def ltsv_was: () -> String?
+  def ltsv_previously_changed?: () -> bool
+  def ltsv_previous_change: () -> Array[String?]?
+  def ltsv_previously_was: () -> String?
+  def restore_ltsv!: () -> void
+  def clear_ltsv_change: () -> void
+
+
+
+  def server: () -> Server
+
+
+
+end
+
+class Report::ActiveRecord_Relation < ActiveRecord::Relation
+  include _ActiveRecord_Relation[Report]
+  include Enumerable[Report, self]
+
+
+end
+
+class Report::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
